@@ -18,8 +18,8 @@ class HomeController extends Controller
     {
         $request->validate([
             'name' => 'required|min:3|max:50',
-            'nim' => 'required|max:18|unique:participants,nim',
-            'email' => 'required|email:rfc,dns',
+            'nim' => 'required|min:12|max:18|unique:participants,nim',
+            'email' => 'required|email:rfc',
             'phone_number' => 'required',
             'programing_lang' => 'max:50'
         ]);
