@@ -1,4 +1,27 @@
 <div class="part1">
+    @if ($errors->any())
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h1 class="display-4 animated fadeInUp">Ups !</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h1 class="font-weight-lighter sub-font2 animated fadeInUp delay-01s">Some of your data is not correct</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h5 class="animated fadeInUp delay-02s">Check it again</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" id="btn_part1"
+                class="btn btn-light p-3 btn-block mt-4 shadow animated bounceIn delay-04s"><b>Sure</b></button>
+        </div>
+    </div>
+    @else
     <div class="row">
         <div class="col-md-12 mt-5">
             <h1 class="display-4 animated fadeInUp">Hi, Fellas !</h1>
@@ -22,4 +45,5 @@
                     ready</b></button>
         </div>
     </div>
+    @endif
 </div>
