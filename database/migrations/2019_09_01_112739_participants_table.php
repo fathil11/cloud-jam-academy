@@ -20,7 +20,7 @@ class ParticipantsTable extends Migration
             $table->string('email');
             $table->string('phone_number');
             $table->integer('know_scale');
-            $table->string('programing_lang');
+            $table->string('programing_lang')->nullable();
             $table->timestamps();
         });
     }
