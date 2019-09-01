@@ -1,0 +1,72 @@
+/* Custom Delay Duration in Animate CSS */
+.animated.delay-01s {
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+}
+
+.animated.delay-02s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animated.delay-03s {
+    -webkit-animation-delay: 1500ms;
+    animation-delay: 1500ms;
+}
+
+.animated.delay-04s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.animated.delay-05s {
+    -webkit-animation-delay: 2300ms;
+    animation-delay: 2300ms;
+}
+
+/* Sub Font Size */
+.sub-font1 {
+    font-size: 40px;
+}
+
+.sub-font2 {
+    font-size: 28px;
+}
+
+/* Form Control Size */
+.form-control-lg {
+    height: calc(2em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0;
+}
+
+/* Form BG  */
+.form-control {
+    font-size: 180%;
+    color: #ffffff;
+    background-color: #007bff00;
+    background-clip: padding-box;
+    border: none;
+}
+
+.form-control:focus {
+    color: #ffffff;
+    background-color: #007bff00;
+    border: 1px #ffffff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+}
+
+.form-control::placeholder {
+    color: hsl(218, 100%, 92%);
+    background-color: #007bff00;
+    background-clip: padding-box;
+}
+
+/* Custom Slider */
+.custom-range::-webkit-slider-thumb {
+    background-color: #ffffff;
+}
