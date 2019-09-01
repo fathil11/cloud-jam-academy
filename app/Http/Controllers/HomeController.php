@@ -10,6 +10,7 @@ class HomeController extends Controller
 {
     public function showHome()
     {
+        $this->pushStat();
         return view('app');
     }
 
@@ -23,7 +24,7 @@ class HomeController extends Controller
             'programing_lang' => 'max:50'
         ]);
 
-        $participant = new Participants;
+        $participant = new Participants();
         $participant->name = $request->name;
         $participant->nim = $request->nim;
         $participant->email = $request->email;
@@ -45,5 +46,30 @@ class HomeController extends Controller
         }else{
             return abort(404);
         }
+    }
+
+    public function pushStat()
+    {
+        $client_ip = $this->getUserIpAddr();
+        $check = WebAnalytics::where('ip_add', $client_ip)->first();
+
+        if($check == null){
+            $web_stat = new WebAnalytics();
+            $web_stat->ip_add = $client_ip;
+            $web_stat->save();
+        }
+    }
+
+    public function getUserIpAddr(){
+        if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+            //ip from share internet
+            $ip = $_SERVER['HTTP_CLIENT_IP'];
+        }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+            //ip pass from proxy
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        }else{
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        return $ip;
     }
 }
