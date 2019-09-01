@@ -53,11 +53,6 @@ $(document).ready(function () {
         showPart5()
     })
 
-    $('#btn_next_part7').click(function () {
-        hidePart7()
-        showPart8()
-    })
-
     $('#btn_back_part7').click(function () {
         hidePart7()
         showPart6()

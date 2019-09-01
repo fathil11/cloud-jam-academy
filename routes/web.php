@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@showHome');
+Route::post('/', 'HomeController@registration');
+Route::get('final', 'HomeController@showFinal');
