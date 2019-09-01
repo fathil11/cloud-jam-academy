@@ -7,8 +7,8 @@
     </div>
     <div class="row">
         <div class="col-md-12 mt-2">
-            <input id="part5_comp2" type="text" class="form-control form-control-lg" placeholder="Sure +628 ..."
-                name="phone_number">
+            <input id="part5_comp2" type="tel" class="form-control form-control-lg" placeholder="Sure +628 ..."
+                name="phone_number" value="{{ old('phone_number') }}">
         </div>
     </div>
     <div class="row">

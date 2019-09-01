@@ -7,7 +7,8 @@
     </div>
     <div class="row">
         <div class="col-md-12 mt-3">
-            <input id="part6_comp2" type="range" min="1" max="10" value="5" class="custom-range" name="know_scale">
+            <input id="part6_comp2" type="range" min="1" max="10" value="5" class="custom-range" name="know_scale"
+                value="{{ old('know_scale') }}">
             <h3 id="range_num" class="mt-3">I've heard about it</h3>
         </div>
     </div>

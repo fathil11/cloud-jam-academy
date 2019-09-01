@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-12 mt-3">
             <input id="part7_comp2" type="text" class="form-control" placeholder="Html, Css, Laravel, ..."
-                name="programing_lang">
+                name="programing_lang" value="{{ old('programing_lang') }}">
         </div>
     </div>
     <div class="row">

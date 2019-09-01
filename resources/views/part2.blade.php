@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-12 mt-3">
             <input id="part2_comp2" type="text" class="form-control form-control-lg" placeholder="My name is ..."
-                name="name">
+                name="name" value="{{ old('name') }}">
         </div>
     </div>
     <div class="row">

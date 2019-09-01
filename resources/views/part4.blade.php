@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-12 mt-3">
             <input id="part4_comp2" type="text" class="form-control form-control-lg"
-                placeholder="You can send it to ..." name="email">
+                placeholder="You can send it to ..." name="email" value="{{ old('email') }}">
         </div>
     </div>
     <div class="row">

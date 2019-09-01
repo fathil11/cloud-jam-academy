@@ -17,9 +17,9 @@ class HomeController extends Controller
     public function registration(Request $request)
     {
         $request->validate([
-            'name' => 'required|max:50|unique:participants,nim',
-            'nim' => 'required|max:18',
-            'email' => 'required',
+            'name' => 'required|min:3|max:50',
+            'nim' => 'required|max:18|unique:participants,nim',
+            'email' => 'required|email:rfc,dns',
             'phone_number' => 'required',
             'programing_lang' => 'max:50'
         ]);
