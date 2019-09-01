@@ -2,7 +2,7 @@
 $(document).ready(function () {
     window.onload = toggleFullScreen()
     $('#btn_part1').click(function () {
-        // toggleFullScreen()
+        toggleFullScreen()
         hidePart1()
         setTimeout(function () {
             showPart2()
