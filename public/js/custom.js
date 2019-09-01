@@ -1,6 +1,6 @@
 // Page Transition
 $(document).ready(function () {
-    window.onload = toggleFullScreen()
+    // window.onload = toggleFullScreen()
     $('#btn_part1').click(function () {
         toggleFullScreen()
         hidePart1()
