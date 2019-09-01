@@ -7,7 +7,8 @@
     </div>
     <div class="row">
         <div class="col-md-12 mt-5">
-            <h1 class="font-weight-lighter sub-font2 animated fadeInUp delay-01s">Some of your data is not correct</h1>
+            <h1 class="font-weight-lighter sub-font2 animated fadeInUp delay-01s">Some of your data is not correct :(
+            </h1>
         </div>
     </div>
     <div class="row">
