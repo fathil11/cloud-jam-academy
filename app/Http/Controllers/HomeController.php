@@ -72,4 +72,9 @@ class HomeController extends Controller
         }
         return $ip;
     }
+
+    public function showLimit()
+    {
+        return view('limit');
+    }
 }
